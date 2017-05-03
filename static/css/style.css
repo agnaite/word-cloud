@@ -1,0 +1,44 @@
+.container {
+  text-align: justify;
+  border-radius: 20%;
+}
+
+.one {
+  font-size: 10px;
+}
+
+.two {
+  font-size: 14px;
+}
+
+.three {
+  font-size: 18px;
+}
+
+.four {
+  font-size: 22px;
+}
+
+.five {
+  font-size: 26px;
+}
+
+.six {
+  font-size: 30px;
+}
+
+.seven {
+  font-size: 34px;
+}
+
+.eight {
+  font-size: 38px;
+}
+
+.nine {
+  font-size: 42px;
+}
+
+.ten {
+  font-size: 46px;
+}
