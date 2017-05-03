@@ -1,4 +1,4 @@
-.container {
+.word-cloud {
   text-align: justify;
   margin: 0;
   padding: 0;
@@ -7,8 +7,12 @@
   line-height: 0.4;
 }
 
-span {
-  overflow: hidden;
+#text-input {
+  width: 70%;
+}
+
+.paste-text-form {
+  padding-top: 200px;
 }
 
 .one {
