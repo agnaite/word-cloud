@@ -22,7 +22,7 @@ def count_words(lst):
 
     for word in lst:
         word = word.strip(punctuation).lower()
-        if '--' not in word:         
+        if '--' not in word:
             word_count[word] = word_count.get(word, 0) + 1
 
     return word_count.items()
