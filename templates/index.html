@@ -1,34 +1,6 @@
-<html>
-<head>
-    <title>☁️</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-</head>
-<body>
-    <div class="container">
-      {% for word, count in words %}
-        {% if count == 1 %}
-          <span class='one'>{{ word }}</span>
-        {% elif count < 5 %}
-          <span class='two'>{{ word }}</span>
-        {% elif count < 10 %}
-          <span class='three'>{{ word }}</span>
-        {% elif count < 16 %}
-          <span class='four'>{{ word }}</span>
-        {% elif count < 20 %}
-          <span class='five'>{{ word }}</span>
-        {% elif count < 50 %}
-          <span class='six'>{{ word }}</span>
-        {% elif count < 75 %}
-          <span class='seven'>{{ word }}</span>
-        {% elif count < 100 %}
-          <span class='eight'>{{ word }}</span>
-        {% elif count < 500 %}
-          <span class='nine'>{{ word }}</span>
-        {% else %}
-          <span class='ten'>{{ word }}</span>
-        {% endif %}
-      {% endfor %}
-    </div>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+    HI
+
+{% endblock %}

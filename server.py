@@ -6,11 +6,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    """Word cloud"""
+    """Homepage"""
+
+    return render_template("index.html")
+
+@app.route('/word-cloud')
+def make_word_cloud():
+    """Makes the word cloud!"""
 
     word_count = data.count_words(data.get_words('dolls_house.txt'))
 
-    return render_template("index.html",
+    return render_template("word_cloud.html",
                            words=word_count)
 
 
