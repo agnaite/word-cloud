@@ -25,9 +25,4 @@ def count_words(lst):
         if '--' not in word:         
             word_count[word] = word_count.get(word, 0) + 1
 
-    word_tuples = word_count.items()
-    # word_tuples.sort(key=lambda x: x[1])
-    return word_tuples
-
-# import pprint
-# pprint.pprint(count_words(get_words('dolls_house.txt')))
+    return word_count.items()

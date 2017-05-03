@@ -1,6 +1,14 @@
 .container {
   text-align: justify;
-  border-radius: 20%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  word-spacing: 0px;
+  line-height: 0.4;
+}
+
+span {
+  overflow: hidden;
 }
 
 .one {
