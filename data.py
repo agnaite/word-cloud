@@ -4,11 +4,14 @@ from string import punctuation
 def get_words(book):
     """Make a list from all the words in a text file"""
 
-    a_file = open(book)
     all_words = []
 
-    for line in a_file:
-        all_words.extend(line.rstrip().split())
+    try:
+        a_file = open(book)
+        for line in a_file:
+            all_words.extend(line.rstrip().split())
+    except:
+        all_words.extend(book.rstrip().split())
 
     return all_words
 

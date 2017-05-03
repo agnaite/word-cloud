@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 
+{% block title %}make a cloud {% endblock %}
+
 {% block content %}
-    HI
+  <form class="form-horizontal" action="/word-cloud" method="GET">
+     <label for="text-input" class="col-sm-2 control-label">Paste text:</label>
+    <textarea id="text-input" class="form-control" name="text-to-cloud" rows="3"></textarea>
+    <input type="submit" value="make word cloud!">
+  </form>
 
 {% endblock %}
