@@ -1,13 +1,13 @@
 .word-cloud {
+  margin-top: 100px;
   text-align: justify;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  word-spacing: 0px;
+  word-spacing: 0;
   line-height: 0.4;
+  overflow: hidden;
+  padding: 10px 0; 
 }
 
-#text-input {
+.form-control {
   width: 70%;
 }
 
@@ -16,41 +16,53 @@
 }
 
 .one {
-  font-size: 10px;
-}
-
-.two {
   font-size: 14px;
 }
 
-.three {
+.two {
   font-size: 18px;
 }
 
-.four {
+.three {
   font-size: 22px;
 }
 
-.five {
+.four {
   font-size: 26px;
 }
 
-.six {
+.five {
   font-size: 30px;
 }
 
-.seven {
+.six {
   font-size: 34px;
 }
 
-.eight {
+.seven {
   font-size: 38px;
 }
 
-.nine {
+.eight {
   font-size: 42px;
 }
 
-.ten {
+.nine {
   font-size: 46px;
+}
+
+.ten {
+  font-size: 50px;
+}
+
+.red {
+  color: red;
+}
+
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }

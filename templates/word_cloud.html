@@ -2,28 +2,29 @@
 {% block title %}☁{% endblock %}
 
 {% block content %}
-  <div class="word-cloud">
+  <span class="hidden word_count">{{ word_count }}</span>
+  <div class="word-cloud center-block">
     {% for word, count in words %}
       {% if count == 1 %}
-        <span class='one'>{{ word }}</span>
+        <span class='one {{ color }}'>{{ word }}</span>
       {% elif count < 5 %}
-        <span class='two'>{{ word }}</span>
+        <span class='two {{ color }}'>{{ word }}</span>
       {% elif count < 10 %}
-        <span class='three'>{{ word }}</span>
+        <span class='three {{ color }}'>{{ word }}</span>
       {% elif count < 16 %}
-        <span class='four'>{{ word }}</span>
+        <span class='four {{ color }}'>{{ word }}</span>
       {% elif count < 20 %}
-        <span class='five'>{{ word }}</span>
+        <span class='five {{ color }}'>{{ word }}</span>
       {% elif count < 50 %}
-        <span class='six'>{{ word }}</span>
+        <span class='six {{ color }}'>{{ word }}</span>
       {% elif count < 75 %}
-        <span class='seven'>{{ word }}</span>
+        <span class='seven {{ color }}'>{{ word }}</span>
       {% elif count < 100 %}
-        <span class='eight'>{{ word }}</span>
+        <span class='eight {{ color }}'>{{ word }}</span>
       {% elif count < 500 %}
-        <span class='nine'>{{ word }}</span>
+        <span class='nine {{ color }}'>{{ word }}</span>
       {% else %}
-        <span class='ten'>{{ word }}</span>
+        <span class='ten {{ color }}'>{{ word }}</span>
       {% endif %}
     {% endfor %}
   </div>
